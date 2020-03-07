@@ -3,14 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>Шведская горечь</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header>
-
+    <header class="page-header">
+      <div class="page-header__left">
+        <a href="#" class="page-heade__logo">
+          <img src="#" alt="Лого сайта" class="page-header__logo-image">
+        </a>
+        <p class="page-header__delivery-info">Доставка по всей России</p>
+      </div>
+      <div class="page-header__right">
+        <a href="tel:8 800 000-00-00" class="page-header__tel">8 800 000-00-00</a>
+        <p class="page-header__call-info">Звонок бесплатный</p>
+      </div>
     </header>
-    <main>
-      <p>Какой то текст!</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин сбор трав "Шведская горечь"</h1>
+      <section class="about-product">
+        <div class="wrapper">
+          <p class="about-product__subtitle">Сбор трав</p>
+          <h2 class="about-product__title">Шведская горечь</h2>
+          <p class="about-product__description">Не имеет аналогов в мире по оздоровительной силе
+            и широте лечебных свойств</p>
+        </div>
+        <img src="#" alt="Изображение товара" class="about-product__image">
+        <form class="about-product__form form-about" action="#" method="post">
+          <button class="about-product__toggle" type="button">Узнать больше</button>
+          <h3 class="form-about__title">Узнайте подробнее
+            о бальзаме</h3>
+          <ul class="form-about__list">
+            <li class="form-about__item">
+              <label class="form-about__label" for="name-filed"></label>
+              <input class="form-about__input" type="text" name="name" id="name-field" placeholder="Имя" autofocus required>
+            </li>
+            <li class="form-about__item">
+              <label class="form-about__label" for="tel-filed"></label>
+              <input class="form-about__input" type="text" name="tel" id="tel-filed" placeholder="Телефон" required>
+            </li>
+          </ul>
+          <button class="form-about__submit" type="submit" name="send-request">Узнать</button>
+        </form>
+      </section>
     </main>
     <footer>
 
