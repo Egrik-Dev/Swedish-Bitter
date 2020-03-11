@@ -2,14 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Шведская горечь</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__left">
-        <a href="#" class="page-heade__logo">
-          <img src="#" alt="Лого сайта" class="page-header__logo-image">
+        <a href="#" class="page-header__logo">
+          <!-- <picture>
+            <source media="(min-width: 1300px)" srcset="img/icon-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/icon-logo-mobile.svg" width="190" height="38" alt="Логотип магазина Cat-Energy">
+          </picture> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+            <img class="page-header__logo-image" src="img/logo-mobile.png" alt="Лого сайта" width="110" height="16">
+          </picture>
         </a>
         <p class="page-header__delivery-info">Доставка по всей России</p>
       </div>
@@ -21,15 +30,15 @@
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин сбор трав "Шведская горечь"</h1>
       <section class="about-product">
-        <div class="wrapper">
+        <div class="about-product__wrapper">
           <p class="about-product__subtitle">Сбор трав</p>
           <h2 class="about-product__title">Шведская горечь</h2>
           <p class="about-product__description">Не имеет аналогов в мире по оздоровительной силе
             и широте лечебных свойств</p>
+          <img src="./img/product-mobile.png" alt="Изображение товара" class="about-product__image">
         </div>
-        <img src="#" alt="Изображение товара" class="about-product__image">
+        <button class="about-product__toggle btn" type="button">Узнать больше</button>
         <form class="about-product__form form-about" action="#" method="post">
-          <button class="about-product__toggle" type="button">Узнать больше</button>
           <h3 class="form-about__title">Узнайте подробнее
             о бальзаме</h3>
           <ul class="form-about__list">

@@ -1,0 +1,44 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 12px;
+}
+
+.page-header__left {
+  margin-right: 65px;
+}
+
+.page-header__logo {
+  display: flex;
+  width: 110px;
+}
+
+.page-header__logo-image {
+  width: 110px;
+}
+
+.page-header__delivery-info {
+  display: none;
+}
+
+.page-header__tel {
+  font-weight: 500;
+  color: $text-color;
+  letter-spacing: 1px;
+}
+
+.page-header__call-info {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 198px;
+  }
+
+  .page-header__logo-image {
+    width: 198px;
+    height: 29px;
+  }
+}

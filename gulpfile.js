@@ -9,6 +9,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var imagemin = require("gulp-imagemin");
 var del = require("del");
 
 gulp.task("css", function () {
@@ -46,6 +47,16 @@ gulp.task("js", function() {
   return gulp.src("source/js/*.js")
   .pipe(gulp.dest("build/js"));
 })
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+  });
 
 gulp.task("server", function () {
   // Команда server.init запускает сервер
