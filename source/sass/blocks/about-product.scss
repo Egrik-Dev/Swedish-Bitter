@@ -16,7 +16,7 @@
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
-  color: #ffffff;
+  color: $primary-color;
 }
 
 .about-product__title {
@@ -26,13 +26,71 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
-  color: #ffffff;
+  color: $primary-color;
 }
 
 .about-product__image {
   margin-bottom: 30px;
 }
 
-.about-product__description, .about-product__form {
+.about-product__description,
+.about-product__form {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-product {
+    background-image: url(../../img/background-tablet.jpg);
+  }
+
+  .about-product__wrapper {
+    position: relative;
+
+    padding: 118px 113px 0 390px;
+    align-items: flex-start;
+  }
+
+  .about-product__subtitle {
+    margin-bottom: 17px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .about-product__title {
+    margin-bottom: 11px;
+
+    font-size: 50px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .about-product__description {
+    display: block;
+    margin: 0 0 60px 0;
+    padding-right: 31px;
+
+    font-size: 16px;
+    color: $primary-color;
+  }
+
+  .about-product__image {
+    position: absolute;
+    top: 94px;
+    left: 20px;
+
+    display: block;
+  }
+
+  .about-product__toggle {
+    display: none;
+  }
+
+  .about-product__form {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+  }
 }
