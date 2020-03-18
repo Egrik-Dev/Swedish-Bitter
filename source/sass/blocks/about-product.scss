@@ -1,10 +1,19 @@
 .about-product {
-  background: #516688 url(../../img/background-mobile.jpg) no-repeat top center;
+  background-color: #696183;
+  background-image: url(../img/background-mobile.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: top, center;
 }
 
 .about-product__wrapper {
-  padding: 30px 20px 0;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-product__info-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +30,7 @@
 
 .about-product__title {
   margin: 0 0 25px;
+  padding: 0 20px;
 
   text-align: center;
   font-size: 30px;
@@ -30,7 +40,8 @@
 }
 
 .about-product__image {
-  margin-bottom: 30px;
+  width: 86px;
+  margin-bottom: 25px;
 }
 
 .about-product__description,
@@ -40,13 +51,40 @@
 
 @media (min-width: $tablet-width) {
   .about-product {
-    background-image: url(../../img/background-tablet.jpg);
+    position: relative;
+
+    padding: 95px 22px 98px;
+
+    background-color: transparent;
+    background-image: url(../img/background-tablet.jpg);
+    background-size: contain;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      background-image: linear-gradient(to bottom, #696183 544px, transparent 544px)
+    }
   }
 
   .about-product__wrapper {
-    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 0;
+  }
 
-    padding: 118px 113px 0 390px;
+  .about-product__info-block {
+    order: 2;
+
+    flex-basis: 50%;
+    padding: 22px 0 0;
     align-items: flex-start;
   }
 
@@ -59,7 +97,8 @@
   }
 
   .about-product__title {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+    padding: 0;
 
     font-size: 50px;
     line-height: 60px;
@@ -68,19 +107,17 @@
 
   .about-product__description {
     display: block;
-    margin: 0 0 60px 0;
-    padding-right: 31px;
+    margin: 0;
+    padding-right: 135px;
 
     font-size: 16px;
     color: $primary-color;
   }
 
   .about-product__image {
-    position: absolute;
-    top: 94px;
-    left: 20px;
-
-    display: block;
+    order: 1;
+    width: 298px;
+    margin-right: 70px;
   }
 
   .about-product__toggle {
@@ -88,9 +125,25 @@
   }
 
   .about-product__form {
-    position: relative;
+    position: absolute;
+    bottom: 113px;
+    right: 22px;
     z-index: 1;
 
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-product {
+    background-image: url(../img/background-desktop.jpg);
+  }
+
+  .about-product__wrapper {
+    align-items: flex-end;
+
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
   }
 }

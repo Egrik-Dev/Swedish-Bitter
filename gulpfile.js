@@ -10,6 +10,7 @@ var rename = require("gulp-rename");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
+var ghPages = require('gulp-gh-pages-will');
 var del = require("del");
 
 gulp.task("css", function () {
@@ -100,5 +101,15 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "html"));
+
+// var options = {
+//   remoteUrl: "https://github.com/Egrik-Dev/Swedish-Bitter",
+//   branch: "build"
+// };
+
+gulp.task('deploy', function() {
+  return gulp.src('build/**/*.*')
+    .pipe(ghPages());
+});
 
 gulp.task("start", gulp.series("build", "server"));

@@ -1,0 +1,52 @@
+.modal {
+  padding: 64px 68px 139px;
+
+  background-color: $primary-color;
+  outline: 1px solid $light-green;
+  outline-offset: -20px;
+}
+
+.modal__title {
+  width: 190px;
+
+  margin: 0 245px 30px 0;
+
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal__item:nth-child(1) {
+  margin-right: 30px;
+}
+
+.modal__input {
+  width: 200px;
+  padding: 10px 0;
+
+  border-color: transparent;
+  border-width: 1px;
+  border-bottom-color: $very-light;
+}
+
+.modal__input::-webkit-input-placeholder {
+  color: $text-green;
+}
+
+.modal__submit {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  width: 250px;
+}

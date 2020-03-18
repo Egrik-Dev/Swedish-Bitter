@@ -38,8 +38,7 @@ input[type="radio"].visually-hidden {
 
 .btn {
   display: inline-block;
-  padding: 20px 0;
-  width: 100%;
+  padding: 19px;
 
   font-size: 12px;
   line-height: 22px;
@@ -53,4 +52,28 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   background-color: $secondary-color;
   border: none;
+
+  &--mobile {
+    width: 100%;
+  }
+
+  &--tablet {
+    position: relative;
+
+    padding-right: 50px;
+
+    letter-spacing: 2px;
+
+    &::after {
+      position: absolute;
+      top: 25px;
+      right: 60px;
+
+      width: 31px;
+      height: 9px;
+
+      content: "";
+      background: url(../img/arrow.png) no-repeat 0 0;
+    }
+  }
 }
