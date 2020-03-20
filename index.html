@@ -26,35 +26,43 @@
       <h1 class="visually-hidden">Интернет-магазин сбор трав "Шведская горечь"</h1>
       <section class="about-product">
         <div class="about-product__wrapper">
-          <p class="about-product__subtitle">Сбор трав</p>
-          <h2 class="about-product__title">Шведская горечь</h2>
-          <p class="about-product__description">Не имеет аналогов в мире по оздоровительной силе
-            и широте лечебных свойств</p>
+          <div class="about-product__info-block">
+            <p class="about-product__subtitle">Сбор трав</p>
+            <h2 class="about-product__title title">Шведская горечь</h2>
+            <p class="about-product__description">Не имеет аналогов в мире по оздоровительной силе
+              и широте лечебных свойств</p>
+          </div>
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/product-desktop.png">
             <source media="(min-width: 768px)" srcset="img/product-tablet.png">
-            <img src="./img/product-mobile.png" alt="Изображение товара" class="about-product__image">
+            <img class="about-product__image" src="./img/product-mobile.png" alt="Изображение товара"  width="86" height="188">
           </picture>
+          <form class="about-product__form modal" action="#" method="post">
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <h3 class="modal__title">Узнайте подробнее
+              о бальзаме</h3>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <label class="modal__label" for="name-filed"></label>
+                <input class="modal__input" type="text" name="name" id="name-field" placeholder="Имя" autofocus required>
+              </li>
+              <li class="modal__item">
+                <label class="modal__label" for="tel-filed"></label>
+                <input class="modal__input" type="text" name="tel" id="tel-filed" placeholder="Телефон" required>
+              </li>
+            </ul>
+            <button class="modal__submit btn btn--tablet" type="submit" name="send-request">Узнать</button>
+          </form>
         </div>
         <button class="about-product__toggle btn" type="button">Узнать больше</button>
-        <form class="about-product__form form-about" action="#" method="post">
-          <h3 class="form-about__title">Узнайте подробнее
-            о бальзаме</h3>
-          <ul class="form-about__list">
-            <li class="form-about__item">
-              <label class="form-about__label" for="name-filed"></label>
-              <input class="form-about__input" type="text" name="name" id="name-field" placeholder="Имя" autofocus required>
-            </li>
-            <li class="form-about__item">
-              <label class="form-about__label" for="tel-filed"></label>
-              <input class="form-about__input" type="text" name="tel" id="tel-filed" placeholder="Телефон" required>
-            </li>
-          </ul>
-          <button class="form-about__submit" type="submit" name="send-request">Узнать</button>
-        </form>
       </section>
     </main>
     <footer>
 
     </footer>
+    <div class="overlay"></div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
