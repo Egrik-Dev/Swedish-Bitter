@@ -28,15 +28,19 @@
         <div class="about-product__wrapper">
           <div class="about-product__info-block">
             <p class="about-product__subtitle">Сбор трав</p>
-            <h2 class="about-product__title">Шведская горечь</h2>
+            <h2 class="about-product__title title">Шведская горечь</h2>
             <p class="about-product__description">Не имеет аналогов в мире по оздоровительной силе
               и широте лечебных свойств</p>
           </div>
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/product-desktop.png">
             <source media="(min-width: 768px)" srcset="img/product-tablet.png">
             <img class="about-product__image" src="./img/product-mobile.png" alt="Изображение товара"  width="86" height="188">
           </picture>
           <form class="about-product__form modal" action="#" method="post">
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
             <h3 class="modal__title">Узнайте подробнее
               о бальзаме</h3>
             <ul class="modal__list">
@@ -52,11 +56,13 @@
             <button class="modal__submit btn btn--tablet" type="submit" name="send-request">Узнать</button>
           </form>
         </div>
-        <button class="about-product__toggle btn btn--mobile" type="button">Узнать больше</button>
+        <button class="about-product__toggle btn" type="button">Узнать больше</button>
       </section>
     </main>
     <footer>
 
     </footer>
+    <div class="overlay"></div>
+    <script src="js/modal.js"></script>
   </body>
 </html>

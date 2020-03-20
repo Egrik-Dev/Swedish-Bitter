@@ -73,6 +73,7 @@ gulp.task("server", function () {
   // Вотчеры следят за изменениями во всех scss и html файлах, и при их изменениях запускают команды
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("js", "html", "refresh"));
 });
 
 gulp.task("clean", function() {

@@ -1,16 +1,33 @@
 .modal {
-  padding: 64px 68px 139px;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px 20px;
 
   background-color: $primary-color;
   outline: 1px solid $light-green;
-  outline-offset: -20px;
+  outline-offset: -10px;
+}
+
+.modal__show {
+  display: flex;
+  animation: bounce 0.6s;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  // z-index: 2;
+  width: 23px;
+  height: 23px;
+  border: 0;
+  background: transparent url(../img/icon-red-chest.svg) no-repeat 0 0;
 }
 
 .modal__title {
-  width: 190px;
-
-  margin: 0 245px 30px 0;
-
+  // width: 190px;
+  margin: 0 0 30px 0;
+  text-align: center;
   font-size: 14px;
   line-height: 22px;
   font-weight: 700;
@@ -20,19 +37,21 @@
 
 .modal__list {
   display: flex;
-  margin: 0;
+  flex-direction: column;
+  margin: 0 0 30px 0;
   padding: 0;
 
   list-style: none;
 }
 
 .modal__item:nth-child(1) {
-  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .modal__input {
-  width: 200px;
-  padding: 10px 0;
+  padding: 10px;
+
+  text-align: center;
 
   border-color: transparent;
   border-width: 1px;
@@ -43,10 +62,68 @@
   color: $text-green;
 }
 
-.modal__submit {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+@media (min-width: $tablet-width) {
+  .modal {
+    position: absolute;
+    // top: 130px;
+    // left: 50%;
+    width: 434px;
+    padding: 64px 68px 139px;
 
-  width: 250px;
+    background-color: $primary-color;
+    outline: 1px solid $light-green;
+    outline-offset: -20px;
+  }
+
+  .modal__close {
+    display: none;
+  }
+
+  .modal__title {
+    width: 190px;
+    margin: 0 245px 30px 0;
+
+    text-align: left;
+  }
+
+  .modal__list {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .modal__item:nth-child(1) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .modal__input {
+    width: 200px;
+    padding: 10px 0;
+
+    text-align: left;
+  }
+
+  // .modal__input::-webkit-input-placeholder {
+  //   color: $text-green;
+  // }
+
+  .modal__submit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal__input {
+    &:hover {
+      border-bottom-color: $secondary-color;
+    }
+
+    &:focus {
+      outline: $secondary-color solid 1px;
+    }
+  }
 }
