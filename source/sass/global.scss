@@ -44,7 +44,7 @@ input[type="radio"].visually-hidden {
   font-size: 12px;
   line-height: 22px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: $primary-color;
   text-align: center;
   vertical-align: middle;
@@ -53,6 +53,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   background-color: $secondary-color;
   border: none;
+
+  &--big {
+    padding: 24px;
+  }
 }
 
 .title {
