@@ -1,0 +1,32 @@
+.page-main__about-product {
+  padding-top: 30px;
+  margin-bottom: 57px;
+}
+
+.page-main__metrics {
+  padding: 0 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__about-product {
+    padding: 95px 22px 0;
+    margin-bottom: 100px;
+  }
+
+  .page-main__metrics {
+    padding: 0 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__about-product {
+    margin-bottom: 125px;
+  }
+
+  .page-main__metrics {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    // padding: 0 85px;
+  }
+}
