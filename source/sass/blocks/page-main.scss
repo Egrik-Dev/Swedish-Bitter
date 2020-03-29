@@ -5,29 +5,25 @@
 
 .page-main__metrics {
   padding: 0 50px;
-  margin-bottom: 22px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__about-product {
     padding: 95px 22px 0;
-    margin-bottom: 100px;
-  }
-
-  .page-main__metrics {
-    padding: 0 95px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-main__about-product {
     margin-bottom: 125px;
   }
 
   .page-main__metrics {
+    padding: 0 95px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__metrics {
     width: 1170px;
-    margin: 0 auto;
+    margin: 0 auto 232px;
     padding: 0;
-    // padding: 0 85px;
   }
 }

@@ -87,14 +87,14 @@ input[type="radio"].visually-hidden {
   .btn {
       position: relative;
 
-      width: auto;
+      width: 100%;
       padding-right: 50px;
 
       letter-spacing: 2px;
 
       &::after {
         position: absolute;
-        top: 25px;
+        top: 43%;
         right: 60px;
 
         width: 31px;

@@ -1,6 +1,7 @@
 .metrics {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .metrics__list {
@@ -55,7 +56,7 @@
     padding-left: 37px;
     margin: 0 88px 108px 0;
 
-    &:nth-child(2n) {
+    &:nth-child(3n) {
       margin-right: 0;
     }
 
@@ -93,18 +94,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .metrics {
+    justify-content: space-between;
+  }
+
   .metrics__instance {
     width: 203px;
-    padding-left: 67px;
-    margin: 0 30px 108px 0;
-
-    &:nth-child(2n) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    padding-left: 66px;
+    margin: 0;
 
     &::after {
       left: 29px;
@@ -124,6 +121,19 @@
       border-radius: 50%;
       opacity: 0;
       transition: 1s;
+    }
+
+    &:nth-last-child(1) {
+      width: 234px;
+      padding-left: 36px;
+
+      &::after {
+        left: 0px;
+      }
+
+      &::before {
+        left: 7px;
+      }
     }
 
     &:hover:before {
