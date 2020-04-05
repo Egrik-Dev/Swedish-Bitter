@@ -18,4 +18,3 @@ if (clientWidth >= MIN_WIDTH_WINDOW) {
     }
   })
 }
-
