@@ -59,11 +59,19 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.title {
+.main-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
   color: $primary-color;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $text-color;
+  text-align: center;
 }
 
 .overlay {
@@ -83,6 +91,26 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.outline-offset-block {
+  background-color: $primary-color;
+  outline: 1px solid $light-green;
+  outline-offset: -10px;
+}
+
+.input {
+  padding: 10px;
+
+  text-align: center;
+
+  border-color: transparent;
+  border-width: 1px;
+  border-bottom-color: $very-light;
+
+  &::-webkit-input-placeholder {
+    color: $text-green;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .btn {
       position: relative;
@@ -92,22 +120,10 @@ input[type="radio"].visually-hidden {
 
       letter-spacing: 2px;
 
-      &::after {
-        position: absolute;
-        top: 43%;
-        right: 60px;
-
-        width: 31px;
-        height: 9px;
-
-        content: "";
-        background: url(../img/arrow.png) no-repeat 0 0;
-      }
-
       &:hover {
         background-color: $btn-hover-color;
 
-        &::after {
+        & .btn__text::after {
           animation: arrow-move 1s;
         }
       }
@@ -115,5 +131,68 @@ input[type="radio"].visually-hidden {
       &:active {
         color: rgba(255, 255, 255, 0.3);
       }
+  }
+
+  .btn__text {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 27%;
+      right: -49px;
+
+      width: 31px;
+      height: 9px;
+
+      content: "";
+      background: url(../img/arrow.png) no-repeat 0 0;
+    }
+
+    &--tablet {
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.7px;
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .outline-offset-block {
+    outline-offset: -20px;
+  }
+
+  .input {
+    width: 200px;
+    padding: 10px 0;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .input {
+    &:hover {
+      border-bottom-color: $secondary-color;
+    }
+
+    &:focus {
+      outline: $secondary-color solid 1px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
   }
 }

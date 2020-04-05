@@ -1,0 +1,224 @@
+.popularity__reasons-container {
+  padding: 0 10px;
+  margin-bottom: 28px;
+}
+
+.popularity__title {
+  margin: 0 0 20px 0;
+}
+
+.popularity__subtitle {
+  margin: 0 0 21px;
+
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+.popularity__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.popularity__item {
+  position: relative;
+
+  padding-left: 21px;
+  margin-bottom: 14px;
+
+  line-height: 22px;
+
+  &::after {
+    position: absolute;
+    top: 6%;
+    left: 1px;
+
+    content: "";
+
+    width: 9px;
+    height: 14px;
+
+    background: url(../img/green-arrow.png) no-repeat 0 0;
+  }
+}
+
+.popularity__image-container {
+  position: relative;
+
+  &::before {
+    position: relative;
+
+    display: block;
+    right: 0;
+    top: 0;
+
+    width: 100%;
+    height: 244px;
+
+    content: "";
+
+    background: #f6ddcc url(../img/woman-mobile.jpg) no-repeat top right;
+    background-size: cover;
+  }
+}
+
+.popularity__block {
+  outline: none;
+}
+
+.popularity__description {
+  padding: 36px;
+  margin: 0;
+
+  text-align: center;
+}
+
+.popularity__btn-text--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .popularity__reasons-container {
+    margin-bottom: 47px;
+  }
+
+  .popularity__title {
+    width: 540px;
+    margin: 0 auto 38px;
+  }
+
+  .popularity__subtitle {
+    margin-bottom: 31px;
+
+    font-size: 14px;
+    letter-spacing: 0.8px;
+  }
+
+  .popularity__list {
+    padding: 0 125px 0 105px;
+  }
+
+  .popularity__item {
+    padding-left: 41px;
+    margin-bottom: 21px;
+
+    font-size: 16px;
+
+    &::after {
+      top: 33%;
+    }
+  }
+
+  .popularity__image-container::before {
+    height: 645px;
+
+    background: #f6ddcc url(../img/woman-tablet.jpg) no-repeat top right;
+    background-size: cover;
+  }
+
+  .popularity__block {
+    position: absolute;
+    bottom: -89px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    // overflow: auto;
+
+    padding: 20px;
+    width: 560px;
+    height: 211px;
+    margin: auto;
+
+    outline: 1px solid #c8dcba;
+  }
+
+  .popularity__description {
+    padding: 34px 40px 0;
+    margin-bottom: 34px;
+
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .popularity__btn {
+    padding-left: 39px;
+
+    text-align-last: left;
+  }
+
+  .popularity__btn-text {
+    display: none;
+
+    &--tablet {
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popularity {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      content: "";
+
+      width: 51%;
+      height: 645px;
+
+      background: #f6ddcc url(../img/woman-desktop.jpg) no-repeat top right;
+      background-size: cover;
+    }
+  }
+
+  .popularity__reasons-container {
+    order: 2;
+
+    width: 570px;
+    margin-right: auto;
+    padding: 37px 0 0 70px;
+  }
+
+  .popularity__image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    order: 1;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .popularity__list {
+    padding: 0;
+  }
+
+  .popularity__title {
+    width: 480px;
+    margin: 0 0 42px 0;
+  }
+
+  .popularity__subtitle {
+    text-align: left;
+    margin-bottom: 58px;
+  }
+
+  .popularity__item {
+    margin-bottom: 46px;
+  }
+
+  .popularity__block {
+    position: relative;
+    margin-bottom: 46px;
+  }
+}

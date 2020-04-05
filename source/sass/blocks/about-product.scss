@@ -135,6 +135,7 @@
     bottom: -10px;
     right: 0;
     left: inherit;
+    z-index: 2;
 
     display: block;
   }
@@ -148,9 +149,6 @@
 
   .about-product__wrapper {
     justify-content: space-between;
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .about-product__image {
