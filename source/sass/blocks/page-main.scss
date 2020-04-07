@@ -12,6 +12,14 @@
   margin-bottom: 53px;
 }
 
+.page-main__history {
+  margin-bottom: 53px;
+}
+
+.page-main__quote {
+  margin-bottom: 51px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__about-product {
     padding: 95px 22px 0;
@@ -25,6 +33,10 @@
 
   .page-main__diseases {
     margin-bottom: 253px;
+  }
+
+  .page-main__history {
+    margin-bottom: 101px;
   }
 }
 
@@ -41,5 +53,10 @@
 
   .page-main__popularity {
     margin-bottom: 223px;
+  }
+
+  .page-main__history {
+    padding-top: 88px;
+    margin-bottom: 198px;
   }
 }

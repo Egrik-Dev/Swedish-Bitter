@@ -48,7 +48,7 @@
   z-index: 3;
 
   left: 50%;
-  bottom: 50px;
+  top: 50px;
 
   display: none;
   width: 260px;
@@ -132,6 +132,7 @@
 
   .about-product__form {
     position: absolute;
+    top: unset;
     bottom: -10px;
     right: 0;
     left: inherit;

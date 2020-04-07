@@ -1,0 +1,244 @@
+.composition {
+  padding-top: 52px;
+
+  background-color: $background;
+}
+
+.composition__title {
+  margin: 0 20px 50px;
+}
+
+.composition__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  counter-reset: compositionCounter;
+}
+
+.composition__item {
+  position: relative;
+
+  width: 100%;
+  padding-top: 125px;
+  margin-bottom: 66px;
+
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+
+    counter-increment: compositionCounter;
+    content: counter(decimal-leading-zero)counter(compositionCounter);
+
+    font-size: 130px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+
+    content: "";
+  }
+
+  &--herbage::after {
+    width: 85px;
+    height: 85px;
+
+    background: url(../img/icon-herbage-mobile.png) no-repeat 0 0;
+  }
+
+  &--instruction::after {
+    width: 97px;
+    height: 70px;
+
+    background: url(../img/icon-instruction-mobile.png) no-repeat 0 0;
+  }
+
+  &--certificate::after {
+    width: 82px;
+    height: 70px;
+
+    background: url(../img/icon-certificate-mobile.png) no-repeat 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .composition {
+    padding: 94px 0;
+  }
+
+  .composition__title {
+    margin-bottom: 39px;
+  }
+
+  .composition__title-part {
+    display: block;
+  }
+
+  .composition__list {
+    flex-direction: row;
+    margin: 0 20px;
+    padding: 13px;
+
+    background-color: #ffffff;
+  }
+
+  .composition__item {
+    padding-top: 153px;
+    padding-bottom: 54px;
+    margin-bottom: 0;
+
+    font-size: 10px;
+    line-height: 14px;
+
+    border: 2px solid #ecf3e7;
+
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+
+    &::before {
+      top: 83px;
+
+      font-size: 110px;
+      line-height: 14px;
+      color: #f7f9f3;
+    }
+
+    &::after {
+      top: 61px;
+    }
+
+    &--herbage::after {
+      width: 63px;
+      height: 63px;
+
+      background: url(../img/icon-herbage-tablet.png) no-repeat 0 0;
+    }
+
+    &--instruction::after {
+      width: 73px;
+      height: 53px;
+
+      background: url(../img/icon-instruction-tablet.png) no-repeat 0 0;
+    }
+
+    &--certificate::after {
+      width: 61px;
+      height: 53px;
+
+      background: url(../img/icon-certificate-tablet.png) no-repeat 0 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .composition {
+    padding: 185px 0 100px;
+
+    background: linear-gradient(to bottom, transparent 435px, #f6f9f3 435px);
+  }
+
+  .composition__wrapper {
+    flex-direction: column;
+  }
+
+  .composition__title {
+    width: 520px;
+    margin-bottom: 32px;
+  }
+
+  .composition__title-part {
+    display: inline;
+  }
+
+  .composition__list {
+    align-self: center;
+    flex-wrap: wrap;
+    width: 975px;
+    margin: 0;
+    padding: 19px;
+    padding-bottom: 0;
+  }
+
+  .composition__item {
+    width: 309px;
+    padding-top: 214px;
+    padding-bottom: 75px;
+    margin: 0 18px 19px 0;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    transition: 1s;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      top: 115px;
+
+      font-size: 150px;
+      line-height: 20px;
+
+      transition: 1s;
+    }
+
+    &::after {
+      top: 86px;
+    }
+
+    &--herbage::after {
+      width: 88px;
+      height: 88px;
+
+      background: url(../img/icon-herbage-desktop.png) no-repeat 0 0;
+    }
+
+    &--instruction::after {
+      width: 101px;
+      height: 73px;
+
+      background: url(../img/icon-instruction-desktop.png) no-repeat 0 0;
+    }
+
+    &--certificate::after {
+      width: 86px;
+      height: 72px;
+
+      background: url(../img/icon-certificate-desktop.png) no-repeat 0 0;
+    }
+
+    &:hover {
+      background-color: #f7f9f3;
+
+      transition: 0.7s;
+
+      &:before {
+        color: #fff;
+
+        transition: 0.7s;
+      }
+    }
+  }
+}

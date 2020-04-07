@@ -62,10 +62,13 @@
 
 @media (min-width: $tablet-width) {
   .history__description-container {
+    padding: 210px 0 80px;
+  }
+
+  .history__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 210px 0 80px;
   }
 
   .history__title {
@@ -138,49 +141,52 @@
   .history {
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -2;
+
+      content: "";
+
+      width: 44.1%;
+      height: 100%;
+
+      background: #f6ddcc url(../img/doctor-paracels-desktop.jpg) no-repeat;
+      background-size: cover;    }
+  }
+
+  .history__description-container {
+    position: relative;
+
+    margin-bottom: 44px;
+    padding: 0;
+
+    align-items: unset;
+
+    background-color: unset;
+
     &::before {
       position: absolute;
-      top: 9.6%;
+      top: 0;
       left: 0;
       z-index: -1;
 
       content: "";
 
       width: 58%;
-      height: 61.6%;
+      height: 100%;
 
       background: linear-gradient(to bottom,transparent 140px,#f6f9f3 140px);
     }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: -139px;
-      z-index: -2;
-
-      content: "";
-
-      width: 53.8%;
-      height: 100%;
-
-      background: #f6ddcc url(../img/doctor-paracels-desktop.jpg) no-repeat top right;
-      background-size: cover;    }
   }
 
   .history__wrapper {
-    flex-direction: column;
-    padding-top: 88px;
-  }
-
-  .history__description-container {
-    width: 680px;
-    margin-right: auto;
-    margin-bottom: 91px;
-    padding: 0;
-
-    align-items: unset;
-
-    background-color: unset;
+    align-items: flex-start;
+    padding-bottom: 47px;
   }
 
   .history__title {
@@ -194,13 +200,17 @@
   }
 
   .history__description-block {
+    width: 680px;
+    margin-right: auto;
     padding: 0 10px 0 0;
   }
 
   .history__form-container {
-    width: 610px;
-    margin-right: auto;
+    width: 1170px;
+    margin: 0 auto;
     padding: 0;
+
+    // padding: 0;
 
     &::before {
       display: none;
@@ -209,8 +219,7 @@
 
   .history__form {
     flex-basis: 370px;
-    margin-left: auto;
-    margin-right: 10px;
+    margin-left: 230px;
     padding: 0;
   }
 

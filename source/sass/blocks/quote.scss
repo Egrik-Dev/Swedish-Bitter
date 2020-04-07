@@ -1,0 +1,96 @@
+.quote__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0 14px;
+}
+
+.quote__text {
+  margin: 0 0 21px;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+.quote__name {
+  width: 150px;
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-style: initial;
+  text-align: center;
+}
+
+.quote__year {
+  display: block;
+  margin-top: 8px;
+
+  font-size: 12px;
+  line-height: 30px;
+  color: #9a9a9a;
+}
+
+@media (min-width: $tablet-width) {
+  .quote {
+    margin: 0 20px;
+
+    border-top: 2px solid $green-metrics;
+    border-bottom: 2px solid $green-metrics;
+  }
+
+  .quote__block {
+    padding: 47px 0;
+  }
+
+  .quote__text {
+    margin: 0 18px 30px 0;
+    padding: 0 50px;
+
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .quote__name {
+    width: auto;
+
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .quote__year {
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .quote {
+    margin: 0 auto;
+    width: 770px;
+
+    border-width: 3px;
+  }
+
+  .quote__block {
+    padding: 52px 0;
+  }
+
+  .quote__text {
+    margin: 0 0 33px;
+    padding: 0;
+
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .quote__name {
+    font-size: 18px;
+  }
+
+  .quote__year {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
