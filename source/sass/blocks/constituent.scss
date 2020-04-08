@@ -1,0 +1,164 @@
+.constituent__title  {
+  margin: 0 0 20px;
+}
+
+.constituent__advantages-list {
+  margin: 0 0 24px;
+  padding: 0 33px 0 50px;
+
+  list-style: none;
+}
+
+.constituent__advantages-item {
+  position: relative;
+
+  margin-bottom: 12px;
+
+  line-height: 22px;
+
+  &::after {
+    position: absolute;
+    top: 9px;
+    left: -22px;
+
+    width: 7px;
+    height: 7px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: $green-metrics;
+  }
+}
+
+.constituent__components-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 0 0 10px;
+  margin-bottom: 31px;
+
+  counter-reset: componentsCounter;
+}
+
+.constituent__component {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 298px;
+  height: 298px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  list-style: none;
+
+  background-color: $background;
+
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 7px;
+
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 700;
+    color: $green-metrics;
+
+    counter-increment: componentsCounter;
+    content: "\2014  "counter(decimal-leading-zero)counter(componentsCounter);
+
+    transform: rotate(-90deg);
+  }
+
+  &--secret {
+  display: flex;
+  justify-content: flex-end;
+
+    &::after {
+      position: absolute;
+      top: 132px;
+      right: 65px;
+
+      font-size: 276px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #cedfc0;
+
+      content: "?";
+    }
+  }
+}
+
+.constituent__component-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.constituent__component-img {
+  display: block;
+}
+
+.constituent__component-title {
+  position: absolute;
+  bottom: 15px;
+  right: 7px;
+
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.4px;
+  color: $green-metrics;
+  writing-mode: tb-rl;
+
+  transform: rotate(180deg);
+}
+
+.constituent__component-text {
+  z-index: 1;
+
+  width: 103px;
+  margin: 0 0 52px 54px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.constituent__block-order-text {
+  margin: 0 31px 48px;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .constituent__title  {
+    margin: 0 0 39px;
+  }
+
+  .constituent__advantages-list {
+    margin: 0 0 45px;
+    padding: 0 129px 0 158px;
+  }
+
+  .constituent__advantages-item {
+    margin-bottom: 29px;
+
+    font-size: 16px;
+  }
+
+  .constituent__components-list {
+    justify-content: flex-start;
+    padding: 0 35px;
+    // margin-bottom: 31px;
+  }
+
+  .constituent__component {
+    width: 330px;
+    height: 330px;
+  }
+}

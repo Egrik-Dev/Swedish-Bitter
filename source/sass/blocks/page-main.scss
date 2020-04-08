@@ -20,6 +20,10 @@
   margin-bottom: 51px;
 }
 
+.page-main__composition {
+  margin-bottom: 72px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__about-product {
     padding: 95px 22px 0;
@@ -37,6 +41,10 @@
 
   .page-main__history {
     margin-bottom: 101px;
+  }
+
+  .page-main__composition {
+    margin-bottom: 96px;
   }
 }
 
