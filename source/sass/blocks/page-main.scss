@@ -24,6 +24,10 @@
   margin-bottom: 72px;
 }
 
+.page-main__constituent {
+  margin-bottom: 53px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__about-product {
     padding: 95px 22px 0;
@@ -45,6 +49,10 @@
 
   .page-main__composition {
     margin-bottom: 96px;
+  }
+
+  .page-main__constituent {
+    margin-bottom: 141px;
   }
 }
 
@@ -74,7 +82,7 @@
 
   .page-main__constituent {
     width: 1170px;
-    margin: 0 auto;
+    margin: 0 auto 168px;
     padding: 0;
   }
 }

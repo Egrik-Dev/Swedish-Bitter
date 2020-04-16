@@ -124,7 +124,7 @@
               </div>
               <div class="outline-offset-block diseases__reviews">
                 <p class="diseases__reviews-description">Более 2 000 покупателей доказали эффективность «Шведской горечи» в каждом из этих случаев</p>
-                <a href="#" class="diseases__reviews-link">Читать отзывы</a>
+                <a href="#reviews" class="diseases__reviews-link">Читать отзывы</a>
               </div>
               <button class="diseases__btn btn btn--big" type="submit" name="send-request" data-btn="form">
                 <span class="btn__text">избавиться от проблем</span>
@@ -377,71 +377,37 @@
           </li>
         </ol>
       </section>
-      <section class="page-main__feedback feedback">
-        <h2 class="feedback__title title">Отзывы о «Шведской горечи»</h2>
-        <input class="visually-hidden feedback__input-russian" type="radio" name="feedback-toggle" id="feedback-russian">
-        <input class="visually-hidden feedback__input-foreign" type="radio" name="feedback-toggle" id="feedback-foreign">
-        <ul class="feedback__labels">
-          <li class="feedback__item-label">
-            <label class="feedback__label-russian" for="feedback-russian">От российскийх потребителей</label>
-          </li>
-          <li class="feedback__item-label">
-            <label class="feedback__label-foreign" for="feedback-foreign">От зарубежных потребителей</label>
-          </li>
-        </ul>
+      <section class="page-main__feedback feedback" id="reviews">
+        <input class="visually-hidden feedback__input-russian" type="radio" name="feedback-toggle" id="feedback-russian" data-tab="russian"  checked>
+        <input class="visually-hidden feedback__input-foreign" type="radio" name="feedback-toggle" id="feedback-foreign" data-tab="foreign">
+        <div class="feedback__wrapper">
+          <h2 class="feedback__title title"><span class="feedback__title-word">Отзывы </span>о «Шведской горечи»</h2>
+          <ul class="feedback__labels">
+            <li class="feedback__item-label feedback__item-label--russian">
+              <label class="feedback__label feedback__label--russian" for="feedback-russian">От российскийх <span class="feedback__label-word">потребителей</span></label>
+            </li>
+            <li class="feedback__item-label feedback__item-label--foreign">
+              <label class="feedback__label feedback__label--foreign" for="feedback-foreign">От зарубежных <span class="feedback__label-word">потребителей</span></label>
+            </li>
+          </ul>
+        </div>
         <div class="feedback__block">
           <ul class="feedback__list">
             <li class="feedback__item-reviews feedback__item-reviews--russian">
-              <ul class="feedback__reviews-list">
-                <li class="feedback__item-review">
-                  <blockquote class="feedback__review">
-                    <p class="feedback__review-text">
-                      Если время от времени употреблять горечь, то вообще не будет болеть ОРЗ или ангинами.
-                      Младшему сыну я развожу раствор слабее (горечь, вода), он с удовольствием пьет, иногда даже сам просит сделать ему горечь.
-                      Только делаю меньше половины стакана, чтобы малыш смог выпить.
-                    </p>
-                    <cite class="feedback__review-name">Аноним</cite>
-                  </blockquote>
-                </li>
-                <li class="feedback__item-review">
-                  <blockquote class="feedback__review">
-                    <p class="feedback__review-text">
-                      Моя семья на протяжение многих лет пользуется шведской горечью.
-                      При болях в горле мы полоскаем горечью.
-                      Когда температура я даю горечь и при этом мы не пользуемся таблетками.
-                    </p>
-                    <cite class="feedback__review-name">Натали</cite>
-                  </blockquote>
-                </li>
+              <ul class="feedback__reviews-list feedback__reviews-list--russian">
               </ul>
             </li>
             <li class="feedback__item-reviews feedback__item-reviews--foreign">
-              <ul class="feedback__reviews-list">
-                <li class="feedback__item-review">
-                  <blockquote class="feedback__review">
-                    <p class="feedback__review-text">
-                      Моя семья на протяжение многих лет пользуется шведской горечью.
-                      При болях в горле мы полоскаем горечью.
-                      Когда температура я даю горечь и при этом мы не пользуемся таблетками.
-                    </p>
-                    <cite class="feedback__review-name">Натали</cite>
-                  </blockquote>
-                </li>
-                <li class="feedback__item-review">
-                  <blockquote class="feedback__review">
-                    <p class="feedback__review-text">
-                      Если время от времени употреблять горечь, то вообще не будет болеть ОРЗ или ангинами.
-                      Младшему сыну я развожу раствор слабее (горечь, вода), он с удовольствием пьет, иногда даже сам просит сделать ему горечь.
-                      Только делаю меньше половины стакана, чтобы малыш смог выпить.
-                    </p>
-                    <cite class="feedback__review-name">Аноним</cite>
-                  </blockquote>
-                </li>
+              <ul class="feedback__reviews-list feedback__reviews-list--foreign">
               </ul>
             </li>
           </ul>
-          <a class="feedback__btn-more-reviews" href="#">Читать ещё отзывы</a>
-          <button class="feedback__btn btn">Присоединиться к тем, кто решил свои проблемы</button>
+        </div>
+        <div class="feedback__buttons-block">
+          <button class="feedback__btn-more-reviews" href="#" type="button">Читать ещё отзывы</button>
+          <button class="feedback__btn btn" data-btn="form" type="button">
+            <span class="feedback__btn-text btn__text btn__text--tablet">Присоединиться к тем, кто решил свои проблемы</span>
+          </button>
         </div>
       </section>
     </main>
@@ -471,5 +437,6 @@
     <div class="overlay"></div>
     <script src="js/modal.js"></script>
     <script src="js/diseases.js"></script>
+    <script src="js/feedback.js"></script>
   </body>
 </html>
