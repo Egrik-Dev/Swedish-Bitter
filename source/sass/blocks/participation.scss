@@ -1,0 +1,122 @@
+.participation__block {
+  outline: 0;
+}
+
+.participation__title {
+  margin: 0 30px 21px;
+}
+
+.participation__description-block {
+  padding: 0 11px;
+  margin-bottom: 21px;
+}
+
+.participation__description {
+  margin: 0 0 13px;
+
+  line-height: 22px;
+
+  &:nth-child(1) {
+    padding-right: 20px;
+  }
+}
+
+.participation__annotation {
+  padding: 0 20px;
+  margin: 0 0 36px;
+
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.participation__btn {
+  padding: 13px 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .participation__block {
+    margin: 0 46px 0 42px;
+    padding: 78px 60px 89px 90px;
+
+    outline: 1px solid #c8dcba;
+    outline-offset: -20px;
+  }
+
+  .participation__title {
+    margin: 0 0 48px;
+
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+  }
+
+  .participation__description-block {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .participation__description {
+    padding-right: 10px;
+
+    font-size: 16px;
+
+    &:nth-child(1) {
+      padding-right: 0;
+    }
+  }
+
+  .participation__annotation {
+    padding: 0;
+    margin-bottom: 62px;
+
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .participation__btn {
+    width: 94.3%;
+    padding: 24px 34px;
+  }
+
+  .participation__btn__text {
+    margin-right: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .participation {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -140px;
+      z-index: -1;
+
+      content: "";
+
+      width: 74.6%;
+      height: 100%;
+
+      background: #efefef url(../img/bottle.jpg) no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .participation__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 59px 0 51px;
+  }
+
+  .participation__block {
+    width: 531px;
+    margin: 0;
+  }
+}

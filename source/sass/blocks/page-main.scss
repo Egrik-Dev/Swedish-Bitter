@@ -28,6 +28,14 @@
   margin-bottom: 53px;
 }
 
+.page-main__feedback {
+  margin-bottom: 54px;
+}
+
+.page-main__participation {
+  margin-bottom: 54px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__about-product {
     padding: 95px 22px 0;
@@ -53,6 +61,14 @@
 
   .page-main__constituent {
     margin-bottom: 141px;
+  }
+
+  .page-main__feedback {
+    margin-bottom: 45px;
+  }
+
+  .page-main__participation {
+    margin-bottom: 122px;
   }
 }
 
@@ -84,5 +100,9 @@
     width: 1170px;
     margin: 0 auto 168px;
     padding: 0;
+  }
+
+  .page-main__feedback {
+    margin-bottom: 202px;
   }
 }

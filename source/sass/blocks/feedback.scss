@@ -134,6 +134,10 @@
     cursor: initial;
     text-decoration: none;
     opacity: 0.5;
+
+    &:hover {
+      color: #9a9a9a;
+    }
   }
 }
 
@@ -194,7 +198,7 @@
   }
 
   .feedback__buttons-block {
-    padding: 0 92px;
+    padding: 0 92px 75px;
   }
 
   .feedback__btn {
@@ -331,6 +335,10 @@
 
   .feedback__btn-more-reviews {
     margin: 0 43px 0 0;
+
+    &:hover {
+      color: $btn-hover-color;
+    }
   }
 
   .feedback__btn {
