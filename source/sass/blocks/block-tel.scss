@@ -1,0 +1,50 @@
+.block-tel__phone {
+  font-weight: 500;
+  color: $text-color;
+  letter-spacing: 1px;
+}
+
+.block-tel__call-info {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .block-tel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .block-tel__phone {
+    position: relative;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    &::after {
+      position: absolute;
+      left: -30px;
+      top: 3px;
+
+      width: 15px;
+      height: 15px;
+
+      content: "";
+
+      background: url("../img/icon-phone.svg") no-repeat 0 0;
+    }
+  }
+
+  .block-tel__call-info {
+    margin: 0;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+
+    &--footer {
+      line-height: 16px;
+      text-align: right;
+    }
+  }
+}

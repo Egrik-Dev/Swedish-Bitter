@@ -114,3 +114,72 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .quality {
+    padding-bottom: 100px;
+
+    background: linear-gradient(to bottom,transparent 180px,#f6f9f3 180px);
+  }
+
+  .quality__wrapper {
+    position: relative;
+
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 88px 0 0;
+  }
+
+  .quality__title {
+    width: 50%;
+    margin: 0 0 75px;
+  }
+
+  .quality__guarantee {
+    width: 510px;
+    padding: 0 0 0 69px;
+    margin: 0 0 44px;
+
+    text-align: left;
+  }
+
+  .quality__certificate-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 416px;
+    height: 644px;
+  }
+
+  .quality__block {
+    padding: 65px 19px 19px;
+    margin-left: 69px;
+    width: 45.5%;
+  }
+
+  .quality__description-block {
+    margin-bottom: 46px;
+    padding-left: 52px;
+  }
+
+  .quality__description {
+    line-height: 22px;
+
+    &:nth-child(1) {
+      margin-bottom: 14px;
+    }
+  }
+
+  .quality__btn {
+    width: 350px;
+    margin-left: auto;
+  }
+
+  .quality__btn__text {
+    margin-right: 10px;
+  }
+}
