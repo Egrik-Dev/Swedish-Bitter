@@ -124,9 +124,9 @@
               </div>
               <div class="outline-offset-block diseases__reviews">
                 <p class="diseases__reviews-description">Более 2 000 покупателей доказали эффективность «Шведской горечи» в каждом из этих случаев</p>
-                <a href="#" class="diseases__reviews-link">Читать отзывы</a>
+                <a href="#reviews" class="diseases__reviews-link">Читать отзывы</a>
               </div>
-              <button class="diseases__btn btn btn--big" type="submit" name="send-request" data-btn="form">
+              <button class="diseases__btn btn btn--big" type="button" name="send-request" data-btn="form">
                 <span class="btn__text">избавиться от проблем</span>
               </button>
             </div>
@@ -147,7 +147,7 @@
           <div class="popularity__image-container">
             <div class="popularity__block outline-offset-block">
               <p class="popularity__description">Даже в странах с очень высоким уровнем медицины, таких как Германия и Австрия, бальзам Шведская Горечь продается в каждой аптеке!</p>
-              <button class="popularity__btn btn btn--big" data-btn="form">
+              <button class="popularity__btn btn btn--big" type="button" data-btn="form">
                 <span class="popularity__btn-text">Получить к себе в аптечку</span>
                 <span class="popularity__btn-text popularity__btn-text--tablet btn__text btn__text--tablet">Получить средство-панацею к себе в аптечку</span>
               </button>
@@ -184,7 +184,7 @@
               <h3 class="history__form-title">Оставьте свою почту и получайте рецепты молодости и здоровья каждую неделю</h3>
               <input class="history__input input" type="email" name="email" id="email-field" placeholder="E-mail" required>
               <button class="history__btn btn" type="submit" name="history-submit">
-                <span class="btn__text btn__text--tablet">оставить почту</span>
+                <span class="btn__text btn__text--tablet">Оставить почту</span>
               </button>
             </form>
           </div>
@@ -212,108 +212,290 @@
         </div>
       </section>
       <section class="page-main__constituent constituent">
-        <h2 class="constituent__title title">Состав «Шведской горечи»</h2>
-        <ul class="constituent__advantages-list">
-          <li class="constituent__advantages-item">
-            Все травы, входящие в сбор, собраны в альпийском запо-
-            веднике «Гуркталь» и имеют немецкий сертификат качества.
+        <h2 class="constituent__title title"><span class="constituent__title-word">Состав </span>«Шведской горечи»</h2>
+        <ol class="constituent__list">
+          <li class="constituent__item constituent__item--advantages">
+            <ul class="constituent__advantage-list">
+              <li class="constituent__item--advantage">
+                Все травы, входящие в сбор, собраны в альпийском запо-
+                веднике «Гуркталь» и имеют немецкий сертификат &nbsp;качества.
+              </li>
+              <li class="constituent__item--advantage">
+                Строго выверенные пропорции каждого компонента в составе
+              </li>
+            </ul>
           </li>
-          <li class="constituent__advantages-item">
-            Строго выверенные пропорции каждого компонента в составе
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Корень дягиля (дудника) лекарственного</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-angelica-archangelica-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-angelica-archangelica-tablet.png">
+                <img class="constituent__component-img" src="img/component-angelica-archangelica-moblie.png" alt="Дягиль лекарственный" width="171" height="247">
+              </picture>
+              <figcaption class="constituent__component-title">Angelica archangelica</figcaption>
+            </figure>
           </li>
-        </ul>
-        <ol class="constituent__components-list">
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-angelica-archangelica-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-angelica-archangelica-tablet.png">
-              <img class="constituent__component-img" src="img/component-angelica-archangelica-moblie.png" alt="Название компонента рецепта"  width="171" height="247">
-            </picture>
-            <span class="constituent__component-title">Angelica archangelica</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Колючник бесстебельный</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-carlina-acaulis-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-carlina-acaulis-tablet.png">
+                <img class="constituent__component-img" src="img/component-carlina-acaulis-moblie.png" alt="Колючник бесстебельный" width="188" height="251">
+              </picture>
+              <figcaption class="constituent__component-title">Carlina acaulis</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-carlina-acaulis-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-carlina-acaulis-tablet.png">
-              <img class="constituent__component-img" src="img/component-carlina-acaulis-moblie.png" alt="Название компонента рецепта"  width="188" height="251">
-            </picture>
-            <span class="constituent__component-title">Carlina acaulis</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Натуральная камфора</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-cunnamomum-camphora-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-cunnamomum-camphora-tablet.png">
+                <img class="constituent__component-img" src="img/component-cunnamomum-camphora-moblie.png" alt="Камфорное дерево" width="211" height="237">
+              </picture>
+              <figcaption class="constituent__component-title">Cunnamomum camphora</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-cunnamomum-camphora-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-cunnamomum-camphora-tablet.png">
-              <img class="constituent__component-img" src="img/component-cunnamomum-camphora-moblie.png" alt="Название компонента рецепта"  width="211" height="237">
-            </picture>
-            <span class="constituent__component-title">Cunnamomum camphora</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Высушенный сок из ствола ясеня манного</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-fraxinus-ornus-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-fraxinus-ornus-tablet.png">
+                <img class="constituent__component-img" src="img/component-fraxinus-ornus-moblie.png" alt="Ясень манновый" width="210" height="234">
+              </picture>
+              <figcaption class="constituent__component-title">Fraxinus ornus</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-fraxinus-ornus-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-fraxinus-ornus-tablet.png">
-              <img class="constituent__component-img" src="img/component-fraxinus-ornus-moblie.png" alt="Название компонента рецепта"  width="210" height="234">
-            </picture>
-            <span class="constituent__component-title">Fraxinus ornus</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Мирра горькая</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-cammiphora-molmol-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-cammiphora-molmol-tablet.png">
+                <img class="constituent__component-img" src="img/component-cammiphora-molmol-moblie.png" alt="Мирра" width="134" height="226">
+              </picture>
+              <figcaption class="constituent__component-title">Cammiphora molmol</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-cammiphora-molmol-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-cammiphora-molmol-tablet.png">
-              <img class="constituent__component-img" src="img/component-cammiphora-molmol-moblie.png" alt="Название компонента рецепта"  width="134" height="226">
-            </picture>
-            <span class="constituent__component-title">Cammiphora molmol</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Корень ревня</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-pheum-palmatum-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-pheum-palmatum-tablet.png">
+                <img class="constituent__component-img" src="img/component-pheum-palmatum-moblie.png" alt="Ревень пальчатый" width="183" height="239">
+              </picture>
+              <figcaption class="constituent__component-title">Pheum palmatum</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-pheum-palmatum-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-pheum-palmatum-tablet.png">
-              <img class="constituent__component-img" src="img/component-pheum-palmatum-moblie.png" alt="Название компонента рецепта"  width="183" height="239">
-            </picture>
-            <span class="constituent__component-title">Pheum palmatum</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Шафран посевной</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-crocus-sativus-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-crocus-sativus-tablet.png">
+                <img class="constituent__component-img" src="img/component-crocus-sativus-moblie.png" alt="Шафран посевной" width="108" height="242">
+              </picture>
+              <figcaption class="constituent__component-title">Crocus sativus</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-crocus-sativus-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-crocus-sativus-tablet.png">
-              <img class="constituent__component-img" src="img/component-crocus-sativus-moblie.png" alt="Название компонента рецепта"  width="108" height="242">
-            </picture>
-            <span class="constituent__component-title">Crocus sativus</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Лист сенны александрийской</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-cassia-angustifolia-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-cassia-angustifolia-tablet.png">
+                <img class="constituent__component-img" src="img/component-cassia-angustifolia-moblie.png" alt="Сенна александрийская" width="181" height="233">
+              </picture>
+              <figcaption class="constituent__component-title">Cassia angustifolia</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-cassia-angustifolia-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-cassia-angustifolia-tablet.png">
-              <img class="constituent__component-img" src="img/component-cassia-angustifolia-moblie.png" alt="Название компонента рецепта"  width="181" height="233">
-            </picture>
-            <span class="constituent__component-title">Cassia angustifolia</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Полынь горькая</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-artemisia-absinthium-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-artemisia-absinthium-tablet.png">
+                <img class="constituent__component-img" src="img/component-artemisia-absinthium-moblie.png" alt="Полынь горькая"  width="160" height="253">
+              </picture>
+              <figcaption class="constituent__component-title">Artemisia absinthium</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-artemisia-absinthium-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-artemisia-absinthium-tablet.png">
-              <img class="constituent__component-img" src="img/component-artemisia-absinthium-moblie.png" alt="Название компонента рецепта"  width="160" height="253">
-            </picture>
-            <span class="constituent__component-title">Artemisia absinthium</span>
+          <li class="constituent__item constituent__item--component">
+            <div class="constituent__item-title-block">
+              <h3 class="constituent__item-title">Куркума (Цитварный корень)</h3>
+            </div>
+            <figure class="constituent__component-figure">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/component-curcuma-zedoaria-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/component-curcuma-zedoaria-tablet.png">
+                <img class="constituent__component-img" src="img/component-curcuma-zedoaria-moblie.png" alt="Куркума цедоария"  width="145" height="240">
+              </picture>
+              <figcaption class="constituent__component-title">Curcuma zedoaria</figcaption>
+            </figure>
           </li>
-          <li class="constituent__component">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/component-curcuma-zedoaria-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/component-curcuma-zedoaria-tablet.png">
-              <img class="constituent__component-img" src="img/component-curcuma-zedoaria-moblie.png" alt="Название компонента рецепта"  width="145" height="240">
-            </picture>
-            <span class="constituent__component-title">Curcuma zedoaria</span>
-          </li>
-          <li class="constituent__component">
+          <li class="constituent__item constituent__item--component constituent__item--secret">
+            <div class="constituent__item-title-block constituent__item-title-block--secret">
+              <h3 class="constituent__item-title"><span class="constituent__item-text">Смесь трав</span> по рецепту Марии Трэбэн</h3>
+            </div>
             <p class="constituent__component-text">Часть рецепта до сих пор находится в секрете</p>
             <span class="constituent__component-title">Theriak venezian</span>
           </li>
+          <li class="constituent__item constituent__item--description">
+              <p class="constituent__descrition-text">
+                Все травы в составе бальзама обладают сильным очищающим воздействием,
+                при этом каждый из компонентов усиливает действие остальных.
+              </p>
+              <p class="constituent__descrition-text constituent__descrition-text--desktop">
+                Соединяясь вместе они создают мощный очищающий эффект. Как оказалось,
+                именно за счет этого эффекта бальзам способен исцелять многие болезни.
+              </p>
+            <button class="constituent__btn btn" type="button" data-btn="form">
+              <span class="constituent__btn-text btn__text btn__text--tablet">Заказать сбор трав</span>
+            </button>
+          </li>
         </ol>
-        <div class="constituent__block-order">
-          <p class="constituent__block-order-text">
-            Все травы в составе бальзама обладают сильным очищающим воздействием,
-            при этом каждый из компонентов усиливает действие остальных.
+      </section>
+      <section class="page-main__feedback feedback" id="reviews">
+        <input class="visually-hidden feedback__input-russian" type="radio" name="feedback-toggle" id="feedback-russian" data-tab="russian"  checked>
+        <input class="visually-hidden feedback__input-foreign" type="radio" name="feedback-toggle" id="feedback-foreign" data-tab="foreign">
+        <div class="feedback__wrapper">
+          <h2 class="feedback__title title"><span class="feedback__title-word">Отзывы </span>о «Шведской горечи»</h2>
+          <ul class="feedback__labels">
+            <li class="feedback__item-label feedback__item-label--russian">
+              <label class="feedback__label feedback__label--russian" for="feedback-russian">От российскийх <span class="feedback__label-word">потребителей</span></label>
+            </li>
+            <li class="feedback__item-label feedback__item-label--foreign">
+              <label class="feedback__label feedback__label--foreign" for="feedback-foreign">От зарубежных <span class="feedback__label-word">потребителей</span></label>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback__block">
+          <ul class="feedback__list">
+            <li class="feedback__item-reviews feedback__item-reviews--russian">
+              <ul class="feedback__reviews-list feedback__reviews-list--russian">
+                <li class="feedback__item-review">
+                  <blockquote class="feedback__review">
+                    <p class="feedback__review-text">
+                      Если время от времени употреблять горечь, то вообще не будет болеть ОРЗ или ангинами. Младшему сыну я развожу раствор слабее (горечь, вода), он с удовольствием пьет, иногда даже сам просит сделать ему горечь. Только делаю меньше половины стакана, чтобы малыш смог выпить.
+                    </p>
+                    <cite class="feedback__review-name">Аноним</cite>
+                  </blockquote>
+                </li>
+                <!-- <li class="feedback__item-review">
+                  <blockquote class="feedback__review">
+                    <p class="feedback__review-text">
+                      Этот сбор действительно очень хорошая вещь. Я его приобрела по совету своей тёти. Замечательно помогает при зубной боли, а также я его постоянно принимаю при простуде. Помогает хорошо и нет никакой химии.
+                    </p>
+                    <cite class="feedback__review-name">Юлия</cite>
+                  </blockquote>
+                </li> -->
+                <li class="feedback__item-review">
+                  <blockquote class="feedback__review">
+                    <p class="feedback__review-text">
+                      Моя семья на протяжение многих лет пользуется шведской горечью. При болях в горле мы полоскаем горечью. Когда температура я даю горечь и при этом мы не пользуемся таблетками.
+                    </p>
+                    <cite class="feedback__review-name">Натали</cite>
+                  </blockquote>
+                </li>
+                <!-- <li class="feedback__item-review">
+                  <blockquote class="feedback__review">
+                    <p class="feedback__review-text">
+                      Я покупаю уже готовый сбор шведский бальзам. Отказались от многих лекарственных препаратов благодаря бальзаму. Так что могу только посоветовать самим попробовать, это стоит того.
+                    </p>
+                    <cite class="feedback__review-name">Евгений</cite>
+                  </blockquote>
+                </li> -->
+              </ul>
+            </li>
+            <li class="feedback__item-reviews feedback__item-reviews--foreign">
+              <ul class="feedback__reviews-list feedback__reviews-list--foreign">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback__buttons-block">
+          <button class="feedback__btn-more-reviews" href="#" type="button">Читать ещё отзывы</button>
+          <button class="feedback__btn btn" type="button" data-btn="form">
+            <span class="feedback__btn-text btn__text btn__text--tablet">Присоединиться к тем, кто решил свои проблемы</span>
+          </button>
+        </div>
+      </section>
+      <section class="page-main__participation participation">
+        <div class="participation__wrapper">
+          <div class="participation__block outline-offset-block">
+            <h2 class="participation__title title">Вы принимаете участие в создании эликсира</h2>
+            <div class="participation__description-block">
+              <p class="participation__description">
+                Приготовление бальзама потребует от вас минимум усилий.
+                Достаточно залить травы 1,5 литрами водки и на-стоять в течение 14 дней ежедневно взбалтывая.
+              </p>
+              <p class="participation__description">
+                Но даже такое небольшое количество действий даст вам возможность почув-ствовать
+                себя настоящим врачевателем и привнесет вашу энергетику в полу-чившийся целительный эликсир.
+              </p>
+            </div>
+            <p class="participation__annotation">Настоя одной упаковки хватает на 4-5 месяцев</p>
+            <button class="participation__btn btn" type="button" data-btn="form">
+              <span class="participation__btn__text btn__text btn__text--tablet">Создать эликсир молодости и здоровья</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__quality quality">
+        <div class="quality__wrapper">
+          <h2 class="quality__title title">Гарантия качества</h2>
+          <p class="quality__guarantee">
+            Если бальзам вам не понравится,
+            мы вернем деньги. Сразу и без
+            лишних вопросов. Мы дорожим
+            своей репутацией и уверены
+            в продукте на 100%
           </p>
-          <button class="constituent__block-btn btn">Заказать сбор трав</button>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/certificate-desktop.jpg">
+            <img class="quality__certificate-img" src="img/certificate-mobile.jpg" alt="Сертификат качества" width="280" height="434">
+          </picture>
+          <div class="quality__block outline-offset-block">
+            <span class="quality__word-but">Но:</span>
+            <div class="quality__description-block">
+              <p class="quality__description">
+                Этот эликсир – именно то средство,
+                которое вам всегда захочется иметьb
+                дома в аптечке и рекомендовать
+                своим близким.
+              </p>
+              <p class="quality__description">
+                К каждой упаковке «Шведской горечи»
+                мы прикладываем немецкий сертифи-
+                кат качества.
+              </p>
+            </div>
+            <button class="quality__btn btn" type="button" data-btn="form">
+              <span class="quality__btn__text btn__text btn__text--tablet">Заказать сбор трав</span>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -343,5 +525,6 @@
     <div class="overlay"></div>
     <script src="js/modal.js"></script>
     <script src="js/diseases.js"></script>
+    <!-- <script src="js/feedback.js"></script> -->
   </body>
 </html>
