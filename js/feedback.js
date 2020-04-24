@@ -126,6 +126,10 @@ const arrForeignReviews = generateReviews(foreignTextsReviews, foreignNames, Tot
 
 // ---- РЕНДЕРИМ СТАРТОВЫЕ КОММЕНТЫ ----
 
+// Удаляем блок заглушку
+const nojsBlockElement = document.querySelector(`.feedback__nojs-block`)
+nojsBlockElement.remove();
+
 // Определяем константы по кол-ву стартовых комментов
 const MOBILE_QUANTITY_REVIEWS = 2;
 const DESKTOP_QUANTITY_REVIEWS = 4;
@@ -187,6 +191,9 @@ let currentTab = Language.RUSSIAN;
 const russianReviewsElement = document.querySelector(`.feedback__input-russian`);
 const foreignReviewsElement = document.querySelector(`.feedback__input-foreign`);
 const readMoreBtn = document.querySelector(`.feedback__btn-more-reviews`);
+
+// Разблокируем кнопку "Читать ещё отзывы"
+readMoreBtn.removeAttribute(`disabled`);
 
 // Функция которая дизеблит кнопку "Читать ещё отзывы" при нажатии на вкладки языков и устанавливает флаг
 const CheckDisabledBtn = (arr, flag) => {

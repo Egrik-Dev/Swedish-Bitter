@@ -18,7 +18,9 @@ overlayElement.addEventListener(`click`, () => {
 
 btnForm.forEach((button) => {
   if (button.dataset.btn === `form`) {
-    button.addEventListener(`click`, () => {
+    button.addEventListener(`click`, (evt) => {
+      evt.preventDefault();
+
       if (clientWidth < TABLET_WIDTH_WINDOW) {
         formElement.classList.add(`modal__show`);
       } else {
