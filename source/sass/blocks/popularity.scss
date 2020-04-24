@@ -127,11 +127,9 @@
     right: 0;
     left: 0;
     z-index: 1;
-    // overflow: auto;
 
     padding: 20px;
     width: 560px;
-    height: 211px;
     margin: auto;
 
     outline: 1px solid #c8dcba;
@@ -140,6 +138,8 @@
   .popularity__description {
     padding: 34px 40px 0;
     margin-bottom: 34px;
+    max-height: 555px;
+    overflow: scroll;
 
     font-size: 16px;
     text-align: left;
@@ -173,7 +173,7 @@
       content: "";
 
       width: 51%;
-      height: 645px;
+      height: 100%;
 
       background: #f6ddcc url(../img/woman-desktop.jpg) no-repeat top right;
       background-size: cover;
@@ -185,6 +185,7 @@
 
     width: 570px;
     margin-right: auto;
+    margin-bottom: 0;
     padding: 37px 0 0 70px;
   }
 
@@ -193,6 +194,7 @@
     flex-direction: column;
     justify-content: flex-end;
     order: 1;
+    width: 690px;
 
     &::before {
       display: none;
@@ -218,7 +220,6 @@
   }
 
   .popularity__block {
-    position: relative;
-    margin-bottom: 46px;
+    bottom: -92px;
   }
 }
