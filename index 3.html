@@ -4,10 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Шведская горечь</title>
-    <link rel="preload" href="fonts/montserratbold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserratmedium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserratregular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -22,7 +18,7 @@
         <p class="page-header__delivery-info">Доставка по всей России</p>
       </div>
       <div class="page-header__block-tel block-tel">
-        <a href="tel:88000000000" class="block-tel__phone">8 800 000-00-00</a>
+        <a href="tel:8 800 000-00-00" class="block-tel__phone">8 800 000-00-00</a>
         <p class="block-tel__call-info">Звонок бесплатный</p>
       </div>
     </header>
@@ -49,12 +45,12 @@
               о бальзаме</h3>
             <ul class="modal__list">
               <li class="modal__item">
+                <label class="modal__label" for="name-filed"></label>
                 <input class="modal__input input" type="text" name="name" id="name-field" placeholder="Имя" required>
-                <label class="visually-hidden" for="name-field">Поле имя</label>
               </li>
               <li class="modal__item">
+                <label class="modal__label" for="tel-filed"></label>
                 <input class="modal__input input" type="text" name="tel" id="tel-filed" placeholder="Телефон" required>
-                <label class="visually-hidden" for="tel-filed">Поле телефон</label>
               </li>
             </ul>
             <button class="modal__submit btn" type="submit" name="send-request">
@@ -96,43 +92,33 @@
         </dl>
       </section>
       <section class="page-main__diseases diseases">
-        <div class="diseases__heading-block">
-          <h2 class="diseases__title title">Что из этого списка вы находите у себя?</h2>
-        </div>
-        <div class="diseases__outer-wrapper">
-          <div class="wrapper">
-            <div class="diseases__list-container">
-              <ol class="diseases__list">
-                <li class="diseases__item diseases__item--tone">
-                  <span class="diseases__item-text diseases__item-text--bold">Сниженный тонус, не хватает энергии</span>
-                </li>
-                <li class="diseases__item diseases__item--zits">
-                  <span class="diseases__item-text diseases__item-text--bold">Прыщи, бородавки и растяжки</span>
-                </li>
-                <li class="diseases__item diseases__item--memory">
-                  <span class="diseases__item-text diseases__item-text--bold">Слабая память и концентрация</span>
-                </li>
-                <li class="diseases__item diseases__item--frequency">
-                  <span class="diseases__item-text diseases__item-text--bold">Болеете чаще раза в год?</span>
-                </li>
-                <li class="diseases__item diseases__item--headache">
-                  <span class="diseases__item-text diseases__item-text--bold">Головные боли</span>
-                </li>
-                <li class="diseases__item diseases__item--secondary">
-                  <span class="diseases__item-text">Синяки, шишки, ожоги, порезы долго не проходят</span>
-                </li>
-                <li class="diseases__item diseases__item--secondary">
-                  <span class="diseases__item-text">Плохо засыпаете и часто просыпаетесь</span>
-                </li>
-                <li class="diseases__item diseases__item--secondary">
-                  <span class="diseases__item-text">Проблемы с желудком</span>
-                </li>
-                <li class="diseases__item diseases__item--secondary">
-                  <span class="diseases__item-text">Стресс</span>
-                </li>
-              </ol>
-            </div>
-            <div class="diseases__reviews-container">
+        <div class="wrapper">
+          <div class="diseases__list-container">
+            <h2 class="diseases__title title">Что из этого списка вы находите у себя?</h2>
+            <ol class="diseases__list">
+              <li class="diseases__item">
+                <span class="diseas__item-text">Сниженный тонус, не хватает энергии</span>
+              </li>
+              <li class="diseases__item">
+                <span class="diseas__item-text">Прыщи, бородавки и растяжки</span>
+              </li>
+              <li class="diseases__item">
+                <span class="diseas__item-text">Слабая память и концентрация</span>
+              </li>
+              <li class="diseases__item">
+                <span class="diseas__item-text">Болеете чаще раза в год?</span>
+              </li>
+              <li class="diseases__item">
+                <span class="diseas__item-text">Головные боли</span>
+              </li>
+              <li class="diseases__item diseases__item--secondary">Синяки, шишки, ожоги, порезы долго не проходят</li>
+              <li class="diseases__item diseases__item--secondary">Плохо засыпаете и часто просыпаетесь</li>
+              <li class="diseases__item diseases__item--secondary">Проблемы с желудком</li>
+              <li class="diseases__item diseases__item--secondary">Стресс</li>
+            </ol>
+          </div>
+          <div class="diseas__reviews-container">
+            <div class="diseases__container-wrapper">
               <div class="diseases__image-container">
                 <img class="diseases__image-skeleton" src="./img/skeleton-tablet.jpg" alt="Человеческий скелет" width="500" height="689">
               </div>
@@ -140,12 +126,11 @@
                 <p class="diseases__reviews-description">Более 2 000 покупателей доказали эффективность «Шведской горечи» в каждом из этих случаев</p>
                 <a href="#reviews" class="diseases__reviews-link">Читать отзывы</a>
               </div>
-              <a class="diseases__btn btn btn--big" href="form.html" data-btn="form">
+              <button class="diseases__btn btn btn--big" type="button" name="send-request" data-btn="form">
                 <span class="btn__text">избавиться от проблем</span>
-              </a>
+              </button>
             </div>
           </div>
-        </div>
       </section>
       <section class="page-main__popularity popularity">
         <div class="wrapper">
@@ -162,50 +147,50 @@
           <div class="popularity__image-container">
             <div class="popularity__block outline-offset-block">
               <p class="popularity__description">Даже в странах с очень высоким уровнем медицины, таких как Германия и Австрия, бальзам Шведская Горечь продается в каждой аптеке!</p>
-              <a class="popularity__btn btn btn--big" href="form.html" data-btn="form">
+              <button class="popularity__btn btn btn--big" type="button" data-btn="form">
                 <span class="popularity__btn-text">Получить к себе в аптечку</span>
                 <span class="popularity__btn-text popularity__btn-text--tablet btn__text btn__text--tablet">Получить средство-панацею к себе в аптечку</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </section>
       <section class="page-main__history history">
-        <div class="history__description-container">
-          <div class="history__wrapper wrapper">
-            <h2 class="history__title title">
-              <span class="history__title-word">Удивительная</span>
-              история возникновения бальзама
-            </h2>
-            <div class="history__description-block">
-              <p class="history__description">
-                Далеко не у каждого лекарственного препарата есть такая удивительная история возникновения,
-                уходящая к временам Парацельса, как у «Шведской горечи». Всю свою жизнь Парацельс искал эликсир долголетия!
-              </p>
-              <p class="history__description">
-                Он экспериментировал с рецептами, в которых горькие коренья комбинировались с разными лекарственными травами.
-                Позднее в 18 веке на основании оставшихся после Парацельса исследований шведский доктор Клауст Замст создал рецепт удивительного эликсира,
-                который он принимал всю свою жизнь. Кстати, умер доктор Замст на 104-м году жизни, упав с лошади при верховой езде.
-              </p>
-              <p class="history__description">
-                В конце прошлого века рецепт попал к известной австрийской травнице Марии Трэбэн, которая, изучив и дополнив его,
-                популяризовала в странах Европы. Теперь сбор трав «Шведская горечь» помогает людям по всему миру.
-              </p>
+          <div class="history__description-container">
+            <div class="history__wrapper wrapper">
+              <h2 class="history__title title">
+                <span class="history__title-word">Удивительная</span>
+                история возникновения бальзама
+              </h2>
+              <div class="history__description-block">
+                <p class="history__description">
+                  Далеко не у каждого лекарственного препарата есть такая удивительная история возникновения,
+                  уходящая к временам Парацельса, как у «Шведской горечи». Всю свою жизнь Парацельс искал эликсир долголетия!
+                </p>
+                <p class="history__description">
+                  Он экспериментировал с рецептами, в которых горькие коренья комбинировались с разными лекарственными травами.
+                  Позднее в 18 веке на основании оставшихся после Парацельса исследований шведский доктор Клауст Замст создал рецепт удивительного эликсира,
+                  который он принимал всю свою жизнь. Кстати, умер доктор Замст на 104-м году жизни, упав с лошади при верховой езде.
+                </p>
+                <p class="history__description">
+                  В конце прошлого века рецепт попал к известной австрийской травнице Марии Трэбэн, которая, изучив и дополнив его,
+                  популяризовала в странах Европы. Теперь сбор трав «Шведская горечь» помогает людям по всему миру.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="history__form-container">
-          <form class="history__form" action="#" method="post">
-            <h3 class="history__form-title">Оставьте свою почту и получайте рецепты молодости и здоровья каждую неделю</h3>
-            <input class="history__input input" type="email" name="email" id="email-field" placeholder="E-mail" required>
-            <button class="history__btn btn" type="submit" name="history-submit">
-              <span class="btn__text btn__text--tablet">Оставить почту</span>
-            </button>
-          </form>
+          <div class="history__form-container">
+            <form class="history__form" action="#" method="post">
+              <h3 class="history__form-title">Оставьте свою почту и получайте рецепты молодости и здоровья каждую неделю</h3>
+              <input class="history__input input" type="email" name="email" id="email-field" placeholder="E-mail" required>
+              <button class="history__btn btn" type="submit" name="history-submit">
+                <span class="btn__text btn__text--tablet">Оставить почту</span>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="page-main__quote quote">
-        <h2 class="visually-hidden">Цитата создателя бальзама</h2>
         <blockquote class="quote__block">
           <p class="quote__text">
             «Кто принимает бальзам утром и вечером, тому не нужны
@@ -231,11 +216,11 @@
         <ol class="constituent__list">
           <li class="constituent__item constituent__item--advantages">
             <ul class="constituent__advantage-list">
-              <li class="constituent__item-advantage">
+              <li class="constituent__item--advantage">
                 Все травы, входящие в сбор, собраны в альпийском запо-
                 веднике «Гуркталь» и имеют немецкий сертификат &nbsp;качества.
               </li>
-              <li class="constituent__item-advantage">
+              <li class="constituent__item--advantage">
                 Строго выверенные пропорции каждого компонента в составе
               </li>
             </ul>
@@ -386,9 +371,9 @@
                 Соединяясь вместе они создают мощный очищающий эффект. Как оказалось,
                 именно за счет этого эффекта бальзам способен исцелять многие болезни.
               </p>
-            <a class="constituent__btn btn" href="form.html" data-btn="form">
+            <button class="constituent__btn btn" type="button" data-btn="form">
               <span class="constituent__btn-text btn__text btn__text--tablet">Заказать сбор трав</span>
-            </a>
+            </button>
           </li>
         </ol>
       </section>
@@ -407,12 +392,6 @@
           </ul>
         </div>
         <div class="feedback__block">
-          <div class="feedback__nojs-block outline-offset-block">
-            <p class="feedback__nojs-block-description">
-              К сожалению возникла ошибка при загрузке отзывов!<br>
-              Пожалуйста попробуйте позднее
-            </p>
-          </div>
           <ul class="feedback__list">
             <li class="feedback__item-reviews feedback__item-reviews--russian">
               <ul class="feedback__reviews-list feedback__reviews-list--russian">
@@ -425,10 +404,10 @@
           </ul>
         </div>
         <div class="feedback__buttons-block">
-          <button class="feedback__btn-more-reviews" type="button" disabled>Читать ещё отзывы</button>
-          <a class="feedback__btn btn" href="form.html" data-btn="form">
+          <button class="feedback__btn-more-reviews" href="#" type="button">Читать ещё отзывы</button>
+          <button class="feedback__btn btn" type="button" data-btn="form">
             <span class="feedback__btn-text btn__text btn__text--tablet">Присоединиться к тем, кто решил свои проблемы</span>
-          </a>
+          </button>
         </div>
       </section>
       <section class="page-main__participation participation">
@@ -446,9 +425,9 @@
               </p>
             </div>
             <p class="participation__annotation">Настоя одной упаковки хватает на 4-5 месяцев</p>
-            <a class="participation__btn btn" href="form.html" data-btn="form">
+            <button class="participation__btn btn" type="button" data-btn="form">
               <span class="participation__btn__text btn__text btn__text--tablet">Создать эликсир молодости и здоровья</span>
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -480,9 +459,9 @@
                 мы прикладываем немецкий сертификат качества.
               </p>
             </div>
-            <a class="quality__btn btn" href="form.html" data-btn="form">
+            <button class="quality__btn btn" type="button" data-btn="form">
               <span class="quality__btn__text btn__text btn__text--tablet">Заказать сбор трав</span>
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -503,7 +482,7 @@
         </li>
       </ul>
       <div class="page-footer__block-tel block-tel">
-        <a href="tel:88000000000" class="block-tel__phone">8 800 000-00-00</a>
+        <a href="tel:8 800 000-00-00" class="block-tel__phone">8 800 000-00-00</a>
         <p class="block-tel__call-info block-tel__call-info--footer">Звонок бесплатный</p>
       </div>
     </footer>
@@ -515,9 +494,11 @@
         <h3 class="modal__title">Узнайте подробнее о бальзаме</h3>
         <ul class="modal__list">
           <li class="modal__item">
+            <label class="modal__label" for="name-filed"></label>
             <input class="modal__input input" type="text" name="popup-modal-name" id="popup-modal-name-field" placeholder="Имя" required>
           </li>
           <li class="modal__item">
+            <label class="modal__label" for="tel-filed"></label>
             <input class="modal__input input" type="text" name="popup-modal-tel" id="popup-modal-tel-filed" placeholder="Телефон" required>
           </li>
         </ul>
